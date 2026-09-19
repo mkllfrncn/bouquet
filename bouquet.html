@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A bouquet, flower by flower</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Young+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <a class="back" href="index.html">&larr; Back</a>
+  <h1>Welcome to My Little Flower Shop</h1>
+  <p class="lede">Hover over any bloom to read what it means. On a phone, tap a flower or pick one below.</p>
+</header>
+
+<main class="stage">
+  <svg id="bouquet" viewBox="0 0 800 900" role="group" aria-label="A large bouquet of flowers. Every flower can be focused to read its meaning.">
+    <ellipse class="shadow" cx="400" cy="880" rx="130" ry="11"/>
+    <path class="pBack" d="M168 548 Q400 610 632 548 L470 852 Q400 868 330 852 Z"/>
+    <g id="stems"></g>
+    <g id="leaves"></g>
+    <g id="blooms"></g>
+    <g id="wrap">
+      <path class="pA" d="M245 585 Q320 640 400 652 L400 866 L365 860 Z"/>
+      <path class="pB" d="M555 585 Q480 640 400 652 L400 866 L435 860 Z"/>
+      <path d="M298 622 L386 836" stroke="rgba(255,255,255,.16)" stroke-width="2" fill="none"/>
+      <path d="M502 622 L414 836" stroke="rgba(255,255,255,.16)" stroke-width="2" fill="none"/>
+      <path d="M400 652 L400 866" stroke="rgba(0,0,0,.2)" stroke-width="2" fill="none"/>
+      <!-- ribbon -->
+      <path class="ribS" d="M400 745 L368 822 L386 812 L393 828 L406 752Z"/>
+      <path class="ribS" d="M400 745 L434 820 L416 811 L409 828 L396 752Z"/>
+      <path class="rib" d="M311 727 Q400 752 489 727 L486 752 Q400 778 314 752 Z"/>
+      <path class="rib" d="M400 742 C352 696 318 728 344 754 C360 766 386 754 400 742Z"/>
+      <path class="rib" d="M400 742 C448 696 482 728 456 754 C440 766 414 754 400 742Z"/>
+      <path class="ribS" d="M400 742 C368 722 350 738 352 750 C366 748 386 748 400 742Z" opacity=".55"/>
+      <path class="ribS" d="M400 742 C432 722 450 738 448 750 C434 748 414 748 400 742Z" opacity=".55"/>
+      <ellipse class="ribS" cx="400" cy="744" rx="14" ry="12"/>
+    </g>
+  </svg>
+</main>
+
+<nav class="chips" id="chips" aria-label="Flowers in the bouquet"></nav>
+
+<div class="tip" id="tip" aria-hidden="true">
+  <span class="dot"></span>
+  <div><p class="tname"></p><p class="tmean"></p><p class="tnote"></p></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
